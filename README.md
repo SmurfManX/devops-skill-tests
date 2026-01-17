@@ -1,73 +1,73 @@
-# IT Skill Tester - Платформа тестирования IT-специалистов
+# IT Skill Tester — IT Specialist Testing Platform
 
-Современная платформа для тестирования знаний IT-специалистов с поддержкой русского и английского языков.
+A modern platform for assessing IT specialists’ knowledge with Russian and English language support.
 
-## Технологический стек
+## Tech Stack
 
-- **Frontend**: Next.js 15, React 19, TypeScript
-- **Styling**: Tailwind CSS, Shadcn/ui
-- **Database**: SQLite (better-sqlite3)
-- **Authentication**: NextAuth.js (планируется)
-- **Internationalization**: next-intl
-- **AI**: Anthropic Claude API (для генерации вопросов)
+- **Frontend**: Next.js 15, React 19, TypeScript  
+- **Styling**: Tailwind CSS, shadcn/ui  
+- **Database**: SQLite (better-sqlite3)  
+- **Authentication**: NextAuth.js (planned)  
+- **Internationalization**: next-intl  
+- **AI**: AI API (for question generation)
 
-## Текущий статус проекта
+## Project Status
 
-### ✅ Реализовано:
-- Инициализация Next.js проекта с TypeScript
-- Настройка Tailwind CSS и Shadcn/ui компонентов
-- Интернационализация (RU/EN) с next-intl
-- SQLite база данных с миграциями
-- Схема БД для пользователей, профессий, вопросов, тестов
-- Скрипт генерации вопросов через Anthropic API
+### ✅ Done
+- Next.js project initialized with TypeScript
+- Tailwind CSS and shadcn/ui configured
+- Internationalization (RU/EN) with next-intl
+- SQLite database with migrations
+- DB schema for users, professions, questions, and test sessions
+- Question generation script via an AI API
 
-### 🔄 В процессе:
-- Генерация ~100 вопросов для DevOps профессии
+### 🔄 In Progress
+- Generating ~100 questions for the DevOps profession
 
-### 📋 Планируется:
-- Система аутентификации (NextAuth.js)
-- Главная страница с выбором профессии
-- Интерфейс тестирования
-- Страница результатов с детальным разбором
-- История тестов
-- Рейтинги и статистика
+### 📋 Planned
+- Authentication system (NextAuth.js)
+- Home page with profession selection
+- Testing interface
+- Results page with detailed breakdown
+- Test history
+- Rankings and statistics
 
-## Установка и запуск
+## Installation & Run
 
-### 1. Установка зависимостей
+### 1. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 2. Настройка переменных окружения
+### 2. Configure environment variables
 
-Создайте файл `.env` на основе `.env.example`:
+Create a `.env` file based on `.env.example`:
 
 ```bash
 cp .env.example .env
 ```
 
-Заполните необходимые переменные:
+Fill in the required variables:
 
 ```env
 ANTHROPIC_API_KEY=your_api_key_here
 DATABASE_URL=./data/database.db
 ```
 
-### 3. Генерация вопросов
+### 3. Generate questions
 
-Запустите скрипт для генерации ~100 вопросов для DevOps:
+Run the script to generate ~100 DevOps questions:
 
 ```bash
 npm run generate-questions
 ```
 
-**Примечание**: Для генерации вопросов требуется API ключ Anthropic Claude. Процесс займет ~10-15 минут и будет стоить примерно $1-2.
+**Note**: Question generation requires an API key. The process may take around 10–15 minutes and typically costs about $1–2.
 
-### 4. Запуск проекта
+### 4. Start the project
 
-Development режим:
+Development:
 
 ```bash
 npm run dev
@@ -80,58 +80,58 @@ npm run build
 npm start
 ```
 
-Откройте [http://localhost:3000](http://localhost:3000) в браузере.
+Open `http://localhost:3000` in your browser.
 
-## Структура проекта
+## Project Structure
 
 ```
 skill-tester/
 ├── src/
 │   ├── app/                 # Next.js App Router
-│   │   ├── [locale]/       # Локализованные страницы
+│   │   ├── [locale]/       # Localized pages
 │   │   └── api/            # API routes
-│   ├── components/         # React компоненты
-│   │   └── ui/            # Shadcn/ui компоненты
-│   ├── lib/               # Утилиты
-│   │   └── db/           # База данных
-│   ├── types/            # TypeScript типы
-│   └── i18n/             # Переводы
-├── scripts/              # Скрипты
+│   ├── components/         # React components
+│   │   └── ui/            # shadcn/ui components
+│   ├── lib/               # Utilities
+│   │   └── db/           # Database
+│   ├── types/            # TypeScript types
+│   └── i18n/             # Translations
+├── scripts/              # Scripts
 │   └── generate-questions.ts
-├── data/                 # SQLite база данных
-└── public/              # Статические файлы
+├── data/                 # SQLite database
+└── public/              # Static files
 ```
 
-## База данных
+## Database
 
-Проект использует SQLite с следующими таблицами:
+The project uses SQLite with the following tables:
 
-- **users** - Пользователи
-- **professions** - Профессии (DevOps, Backend, Frontend, etc.)
-- **questions** - Вопросы тестов (двуязычные)
-- **test_sessions** - Сессии тестирования
-- **user_answers** - Ответы пользователей
+- **users** — Users
+- **professions** — Professions (DevOps, Backend, Frontend, etc.)
+- **questions** — Test questions (bilingual)
+- **test_sessions** — Testing sessions
+- **user_answers** — User answers
 
-База данных автоматически инициализируется при первом запуске.
+The database is automatically initialized on the first run.
 
-## Доступные команды
+## Available Commands
 
 ```bash
-npm run dev                 # Запуск development сервера
-npm run build               # Сборка production версии
-npm start                   # Запуск production сервера
-npm run lint                # Проверка кода
-npm run generate-questions  # Генерация вопросов через AI (с предупреждением о дубликатах)
-npm run clean-questions     # Очистка всех вопросов из базы данных
-npm run remove-duplicates   # Удаление дубликатов вопросов
+npm run dev                 # Start development server
+npm run build               # Build production version
+npm start                   # Start production server
+npm run lint                # Lint the codebase
+npm run generate-questions  # Generate questions via AI (with duplicate warnings)
+npm run clean-questions     # Remove all questions from the database
+npm run remove-duplicates   # Remove duplicate questions
 ```
 
-**Важно:** Скрипт `generate-questions` НЕ удаляет старые вопросы, а добавляет новые. Если хотите начать с чистой базы, сначала запустите `npm run clean-questions`.
+**Important:** The `generate-questions` script does NOT delete old questions; it appends new ones. If you want a clean database, run `npm run clean-questions` first.
 
-## Лицензия
+## License
 
 MIT
 
-## Автор
+## Author
 
-Создано с помощью Claude Code
+Nika Lukava
