@@ -1,0 +1,87 @@
+{
+  "common": {
+    "appName": "IT Skill Tester",
+    "language": "Language",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "home": "Home",
+    "profile": "Profile",
+    "history": "History",
+    "leaderboard": "Leaderboard",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "home": {
+    "title": "Test Your IT Skills",
+    "subtitle": "Improve your knowledge with professional tests for IT specialists",
+    "chooseProfession": "Choose a profession",
+    "startTest": "Start Test",
+    "questionsAvailable": "questions"
+  },
+  "professions": {
+    "devops": "DevOps Engineer",
+    "devops_description": "Test your knowledge in DevOps: CI/CD, containerization, orchestration, monitoring, and infrastructure automation"
+  },
+  "test": {
+    "question": "Question",
+    "of": "of",
+    "next": "Next",
+    "previous": "Previous",
+    "skip": "Skip",
+    "finish": "Finish Test",
+    "selectAnswer": "Select an answer",
+    "progress": "Progress",
+    "chooseQuestions": "Choose number of questions",
+    "questions_10": "10 questions - Quick test",
+    "questions_20": "20 questions - Standard test",
+    "questions_30": "30 questions - About 30 minutes",
+    "questions_50": "50 questions - Full test"
+  },
+  "results": {
+    "title": "Test Results",
+    "score": "Your score",
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "percentage": "Percentage",
+    "detailedReview": "Detailed Review",
+    "yourAnswer": "Your answer",
+    "correctAnswer": "Correct answer",
+    "explanation": "Explanation",
+    "tryAgain": "Try Again",
+    "otherProfession": "Other Profession",
+    "backHome": "Back to Home",
+    "shareResults": "Share Results"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "confirmPassword": "Confirm Password",
+    "loginTitle": "Login to your account",
+    "registerTitle": "Create an account",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "registerLink": "Register",
+    "loginLink": "Login"
+  },
+  "history": {
+    "title": "Test History",
+    "noTests": "No tests completed yet",
+    "profession": "Profession",
+    "date": "Date",
+    "score": "Score",
+    "viewDetails": "View Details",
+    "filterBy": "Filter by profession"
+  },
+  "leaderboard": {
+    "title": "Leaderboard",
+    "rank": "Rank",
+    "user": "User",
+    "averageScore": "Average Score",
+    "testsCompleted": "Tests Completed",
+    "allProfessions": "All Professions",
+    "top100": "Top 100 Users"
+  }
+}

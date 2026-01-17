@@ -1,0 +1,87 @@
+{
+  "common": {
+    "appName": "IT Тестирование",
+    "language": "Язык",
+    "login": "Войти",
+    "register": "Регистрация",
+    "logout": "Выйти",
+    "home": "Главная",
+    "profile": "Профиль",
+    "history": "История",
+    "leaderboard": "Рейтинг",
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "success": "Успешно"
+  },
+  "home": {
+    "title": "Проверьте свои IT навыки",
+    "subtitle": "Улучшайте свои знания с помощью профессиональных тестов для IT-специалистов",
+    "chooseProfession": "Выберите профессию",
+    "startTest": "Начать тест",
+    "questionsAvailable": "вопросов"
+  },
+  "professions": {
+    "devops": "DevOps Инженер",
+    "devops_description": "Проверьте свои знания в DevOps: CI/CD, контейнеризация, оркестрация, мониторинг и автоматизация инфраструктуры"
+  },
+  "test": {
+    "question": "Вопрос",
+    "of": "из",
+    "next": "Следующий",
+    "previous": "Предыдущий",
+    "skip": "Пропустить",
+    "finish": "Завершить тест",
+    "selectAnswer": "Выберите ответ",
+    "progress": "Прогресс",
+    "chooseQuestions": "Выберите количество вопросов",
+    "questions_10": "10 вопросов - Быстрый тест",
+    "questions_20": "20 вопросов - Стандартный тест",
+    "questions_30": "30 вопросов - Около 30 минут",
+    "questions_50": "50 вопросов - Полный тест"
+  },
+  "results": {
+    "title": "Результаты теста",
+    "score": "Ваш результат",
+    "correct": "Правильно",
+    "incorrect": "Неправильно",
+    "percentage": "Процент",
+    "detailedReview": "Детальный разбор",
+    "yourAnswer": "Ваш ответ",
+    "correctAnswer": "Правильный ответ",
+    "explanation": "Объяснение",
+    "tryAgain": "Попробовать снова",
+    "otherProfession": "Другая профессия",
+    "backHome": "На главную",
+    "shareResults": "Поделиться результатом"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Пароль",
+    "name": "Имя",
+    "confirmPassword": "Подтвердите пароль",
+    "loginTitle": "Войдите в свой аккаунт",
+    "registerTitle": "Создайте аккаунт",
+    "noAccount": "Нет аккаунта?",
+    "haveAccount": "Уже есть аккаунт?",
+    "registerLink": "Регистрация",
+    "loginLink": "Войти"
+  },
+  "history": {
+    "title": "История тестов",
+    "noTests": "Вы еще не прошли ни одного теста",
+    "profession": "Профессия",
+    "date": "Дата",
+    "score": "Результат",
+    "viewDetails": "Подробнее",
+    "filterBy": "Фильтр по профессии"
+  },
+  "leaderboard": {
+    "title": "Рейтинг",
+    "rank": "Место",
+    "user": "Пользователь",
+    "averageScore": "Средний балл",
+    "testsCompleted": "Тестов пройдено",
+    "allProfessions": "Все профессии",
+    "top100": "Топ 100 пользователей"
+  }
+}
